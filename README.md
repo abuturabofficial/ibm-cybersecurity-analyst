@@ -1,4 +1,4 @@
-#I BM Cybersecurity Analyst Professional Certificate
+# IBM Cybersecurity Analyst Professional Certificate
 My notes of "IBM Cybersecurity Analyst Professional Certificate". This certificate includes following 8 individual coureses:
 
 ### 1) Introduction to Cybersecurity Tools & Cyber Attacks
