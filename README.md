@@ -1,16 +1,20 @@
 # IBM Cybersecurity Analyst Professional Certificate
-My notes of "IBM Cybersecurity Analyst Professional Certificate". This certificate includes following 8 individual coureses:
+My notes of "IBM Cybersecurity Analyst Professional Certificate". This certificate includes following 8 individual courses:
 
-### 1) Introduction to Cybersecurity Tools & Cyber Attacks
-
-*Note:* The notes for course number 1. "Inroduction to Cybersecurity Tools & Cyber Attacks" are not there in the repo, as initially when I started taking this professional certificate, I didn't have plan to take digitall notes.
+### 1) Introduction to Cybersecurity Tools & Cyberattacks
 
 ### 2) Cybersecurity Roles, Processes & Operating System Security
+
 ### 3) Cybersecurity Compliance Framework & System Administration
+
 ### 4) Network Security & Database Vulnerabilities
+
 ### 5) Penetration Testing, Incident Response and Forensics
+
 ### 6) Cyber Threat Intelligence
+
 ### 7) Cybersecurity Capstone: Breach Response Case Studies
+
 ### 8) IBM Cybersecurity Analyst Assessment
 
 
