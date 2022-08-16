@@ -1,3 +1,63 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Types of actors and their motives](#types-of-actors-and-their-motives)
+  - [A brief overview of types of actors and their motives](#a-brief-overview-of-types-of-actors-and-their-motives)
+    - [Motivation Factors](#motivation-factors)
+  - [Hacking organizations](#hacking-organizations)
+    - [Nation States](#nation-states)
+  - [Major different types of cyberattacks](#major-different-types-of-cyberattacks)
+    - [Malware and attacks](#malware-and-attacks)
+- [An Architect's perspective on attack classifications](#an-architects-perspective-on-attack-classifications)
+  - [Security Attack Definition](#security-attack-definition)
+  - [Security Services](#security-services)
+    - [Security Service Purpose](#security-service-purpose)
+    - [Security Services, X.800 style](#security-services-x800-style)
+  - [Security Mechanisms](#security-mechanisms)
+  - [Network Security Model](#network-security-model)
+    - [Security Architecture is Context](#security-architecture-is-context)
+    - [Security Architecture and Motivation](#security-architecture-and-motivation)
+    - [Security Architecture - Protection](#security-architecture---protection)
+  - [Organizational Threats](#organizational-threats)
+    - [Types of Threats](#types-of-threats)
+  - [Attacks](#attacks)
+    - [Passive Attacks](#passive-attacks)
+    - [Active Attacks](#active-attacks)
+  - [Security Architecture - Attacks models](#security-architecture---attacks-models)
+  - [Passive Attacks](#passive-attacks-1)
+  - [Active Attacks](#active-attacks-1)
+- [Malware and an Introduction to Threat Protection](#malware-and-an-introduction-to-threat-protection)
+  - [Malware and Ransomware](#malware-and-ransomware)
+    - [Types of Malware](#types-of-malware)
+  - [Other Attack Vectors](#other-attack-vectors)
+    - [Some Known Threat Actors](#some-known-threat-actors)
+  - [Threat Protection](#threat-protection)
+- [Additional Attack Vectors Today](#additional-attack-vectors-today)
+  - [Internet Security Threats - Mapping](#internet-security-threats---mapping)
+    - [Mapping](#mapping)
+    - [Mapping: Countermeasures](#mapping-countermeasures)
+  - [Internet Security Threats - Packet Sniffing](#internet-security-threats---packet-sniffing)
+    - [Packet Sniffing](#packet-sniffing)
+    - [Packet Sniffing - Countermeasures](#packet-sniffing---countermeasures)
+  - [Internet Security Threats - IP Spoofing](#internet-security-threats---ip-spoofing)
+    - [IP Spoofing](#ip-spoofing)
+    - [IP Spoofing: ingress filtering](#ip-spoofing-ingress-filtering)
+  - [Internet Security Threats - Denial of Service](#internet-security-threats---denial-of-service)
+    - [Denial of service](#denial-of-service)
+    - [Denial of service - Countermeasures](#denial-of-service---countermeasures)
+  - [Internet Security Threats - Host insertions](#internet-security-threats---host-insertions)
+    - [Host insertions](#host-insertions)
+    - [Host insertions - Countermeasures](#host-insertions---countermeasures)
+- [Attacks and Cyber Crime Resources](#attacks-and-cyber-crime-resources)
+  - [The Cyber Kill Chain](#the-cyber-kill-chain)
+  - [What is Social Engineering?](#what-is-social-engineering)
+    - [Phishing](#phishing)
+    - [Vishing](#vishing)
+  - [Cyberwarfare](#cyberwarfare)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Types of actors and their motives
 
 ## A brief overview of types of actors and their motives
@@ -112,7 +172,7 @@ Two main classifications
 
 ## Network Security Model
 
-<center>![Network Security Model](./images/network_sec_model.png)</center>
+![Network Security Model](./images/network_sec_model.png)
 
 ### Security Architecture is Context
 
@@ -188,18 +248,18 @@ Fours forms:
 
 ## Passive Attacks
 
-<center>![Passive Attack: Traffic Analysis](./images/traffic analysis.png)</center>
+![Passive Attack: Traffic Analysis](./images/traffic analysis.png)
 
 ## Active Attacks
 
-<center>![Active Attack: Masquerade](./images/masquerade.png)</center>
+![Active Attack: Masquerade](./images/masquerade.png)
 
-<center>![Active Attack: Modification](./images/modification.png)</center>
+![Active Attack: Modification](./images/modification.png)
 
 
-<center>![Active Attack: DDos](./images/DDos.png)</center>
+![Active Attack: DDos](./images/DDos.png)
 
-<center>![Active Attack: DDos](./images/ddos2.png)</center>
+![Active Attack: DDos](./images/ddos2.png)
 
 # Malware and an Introduction to Threat Protection
 

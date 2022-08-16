@@ -1,3 +1,28 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [History of Cybersecurity](#history-of-cybersecurity)
+  - [Introduction to Cybersecurity Tools & Cyberattacks](#introduction-to-cybersecurity-tools--cyberattacks)
+    - [Today's Cybersecurity Challenge](#todays-cybersecurity-challenge)
+    - [SOC(Security Operation Center) Analyst Tasks](#socsecurity-operation-center-analyst-tasks)
+- [From Ronald Reagan to Where we are today](#from-ronald-reagan-to-where-we-are-today)
+  - [From Ronald Reagan/War Games to where we are Today](#from-ronald-reaganwar-games-to-where-we-are-today)
+  - [Impact of 9/11 on Cybersecurity](#impact-of-911-on-cybersecurity)
+  - [Nice early operations](#nice-early-operations)
+- [Cybersecurity Programs](#cybersecurity-programs)
+  - [Cybersecurity Introduction](#cybersecurity-introduction)
+  - [Things to Consider when starting a Cybersecurity Program](#things-to-consider-when-starting-a-cybersecurity-program)
+- [Cybersecurity - A Security Architect's Perspective](#cybersecurity---a-security-architects-perspective)
+  - [What is Security?](#what-is-security)
+  - [Additional Security Challenges](#additional-security-challenges)
+- [What is Critical Thinking?](#what-is-critical-thinking)
+  - [Beyond Technology: Critical Thinking in Cybersecurity](#beyond-technology-critical-thinking-in-cybersecurity)
+  - [Critical Thinking: A Model](#critical-thinking-a-model)
+  - [Critical Thinking - 5 Key Skills](#critical-thinking---5-key-skills)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # History of Cybersecurity
 
 ## Introduction to Cybersecurity Tools & Cyberattacks
