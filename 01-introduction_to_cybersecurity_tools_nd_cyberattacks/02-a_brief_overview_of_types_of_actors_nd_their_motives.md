@@ -248,7 +248,7 @@ Fours forms:
 
 ## Passive Attacks
 
-![Passive Attack: Traffic Analysis](./images/traffic analysis.png)
+![Passive Attack: Traffic Analysis](./images/traffic_analysis.png)
 
 ## Active Attacks
 
