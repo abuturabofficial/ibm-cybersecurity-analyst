@@ -18,15 +18,7 @@ My notes of "IBM Cybersecurity Analyst Professional Certificate". This certifica
 ### 8) IBM Cybersecurity Analyst Assessment
 
 
-
-
-
-
-
-
-
-
-
+> **Warning**: ** These notes are taken, considering my earlier knowledge of the topics, the difficulty level, and the knowledge, I gained from the other courses, I'm taking along with these. So, use these notes at your own discretion.
 
 ---
 
