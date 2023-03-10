@@ -30,6 +30,29 @@
     - [What are auditors looking for:](#what-are-auditors-looking-for)
     - [What does SOC1/SOC2 Test](#what-does-soc1soc2-test)
       - [Continuous Monitoring – Between audits](#continuous-monitoring--between-audits)
+- [Industry Standards](#industry-standards)
+  - [Health Insurance Portability and Accountability Act (HIPAA)](#health-insurance-portability-and-accountability-act-hipaa)
+    - [What is HIPAA-HITECH](#what-is-hipaa-hitech)
+    - [HIPAA Definitions](#hipaa-definitions)
+      - [Why is Compliance Essential?](#why-is-compliance-essential)
+      - [HIPAA is a U.S. Regulation, so be aware…](#hipaa-is-a-us-regulation-so-be-aware)
+      - [HIPAA Security Rule](#hipaa-security-rule)
+        - [Administrative Safeguards](#administrative-safeguards)
+        - [Technical Safeguards](#technical-safeguards)
+        - [Physical Safeguards](#physical-safeguards)
+  - [Payment Card Industry Data Security Standard (PCI DSS)](#payment-card-industry-data-security-standard-pci-dss)
+    - [The PCI Data Security Standard](#the-pci-data-security-standard)
+      - [Goals and Requirements](#goals-and-requirements)
+      - [Scope](#scope)
+      - [Determining Scope](#determining-scope)
+      - [PCI Requirements](#pci-requirements)
+- [Critical Security Controls](#critical-security-controls)
+  - [Center for Internet Security (CIS) Critical Security Controls](#center-for-internet-security-cis-critical-security-controls)
+    - [CIS Critical Security Controls](#cis-critical-security-controls)
+    - [CIS Control<sup>TM</sup> 7](#cis-controlsuptmsup-7)
+    - [CIS Control<sup>TM</sup> 7.1 Implementation Groups](#cis-controlsuptmsup-71-implementation-groups)
+    - [Structure of the CIS Control<sup>TM</sup> 7.1](#structure-of-the-cis-controlsuptmsup-71)
+- [Compliance Summary](#compliance-summary)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -293,3 +316,177 @@ Controls will be tested for operating effectiveness over time, focusing on:
 - Timely deviation from policy documentation.
 - Timely temporary failures of a control or loss of evidence documentation and communication.
 
+# Industry Standards
+
+## Health Insurance Portability and Accountability Act (HIPAA)
+
+Healthcare organizations use cloud services to achieve more than saving and scalability:
+- Foster virtual collaboration across care environments
+- Leverage full potential of existing patient data
+- Address challenges in analyzing patient needs
+- Provide platforms for care innovation
+- Expand delivery network
+- Reduce response time in the case of emergencies
+- Integrate data silos and optimizes information flow
+- Increase resource utilization
+- Simplify processes, reducing administration cost
+
+### What is HIPAA-HITECH
+
+- The US Federal laws and regulations that define the control of most personal healthcare information (PHI) for companies responsible for managing such data are:
+	- **Health insurance Portability and Accountability Act (HIPAA)**
+	- **Health Information Technology for Economic Clinical Health Act (HITECH)**
+- The **HIPAA Privacy Rule** establishes standards to protect individuals’ medical records and other personal health information and applies to health plans, health care clearinghouses, and those health care providers who conduct certain health care transactions electronically.
+- The **HIPAA Security Rule** establishes a set of security standards for protecting certain health information that is held or transferred in electronic form. The Security Rule operationalizes the protections contained in the Privacy Rule by addressing the technical and non-technical safeguards that must be put in place to secure individuals’ “electronic protected health information” (e-PHI)
+
+### HIPAA Definitions
+
+**U.S. Department of Health and Human Services (HHS) Office of Civil Rights (OCR):**
+Governing entity for HIPAA.
+
+**Covered Entity:**
+HHS-OCR define companies that manage healthcare data for their customers as a Covered Entity.
+
+**Business Associate:**
+Any vendor company that supports the Covered Entity.
+
+**Protected Health Information (PHI):**
+Any information about health status, provision of health care, or payment for health care that is maintained by a Covered Entity (or a Business Associate of a Covered Entity), and can be linked to a specific individual.
+
+**HHS-OCR “Wall of Shame”:**
+Breach Portal: Notice to the Secretary of HHS Breach of Unsecured Protected Health Information.
+
+#### Why is Compliance Essential?
+
+- U.S. Law states that all individuals have the right to expect that their private health information be kept private and only be used to help assure their health.
+- There are significant enforcement penalties if a Covered Entity / Business Associate is found in violation.
+- HHS-OCR can do unannounced audits on the **(CE+BA)** or just the **BA**.
+
+#### HIPAA is a U.S. Regulation, so be aware…
+
+- Other countries have similar regulations / laws:
+	- Canada – Personal Information Protection and Electronic Documents Act
+	- European Union (EU) Data Protection Directive (GDPR)
+- Many US states address patient privacy issues and are stricter than those set forth in HIPAA and therefore supersedes the US regulations.
+- Some international companies will require HIPAA compliance for an either a measure of confidence, or because they intend to do business with US data.
+
+#### HIPAA Security Rule
+
+The Security Rule requires, covered entities to maintain reasonable and appropriate **administrative, technical**, and **physical safeguards** for protecting **“electronic protected health information” (e-PHI)**.
+
+Specifically, covered entities must:
+- Ensure the confidentiality, integrity, and availability of all e-PHI they create, receive, maintain or transmit.
+- Identify and protect against reasonably anticipated threats to the security or integrity of the information.
+- Protect against reasonably anticipated, impermissible uses or disclosures; and
+- ensure compliance by their workforce.
+
+##### Administrative Safeguards
+
+The Administrative Safeguards provision in the Security Rule require covered entities to perform risk analysis as part of their security management processes.
+
+Administrative Safeguards include:
+- Security Management Process
+- Security Personnel
+- Information Access Management
+- Workforce Training and Management
+- Evaluation
+
+##### Technical Safeguards
+
+Technical Safeguards include:
+- Access Control
+- Audit Controls
+- Integrity Controls
+- Transmission Security
+
+##### Physical Safeguards
+
+Physical Safeguards include:
+- Facility Access and Control
+- Workstation and Device Security
+
+## Payment Card Industry Data Security Standard (PCI DSS)
+
+### The PCI Data Security Standard
+
+- The PCI DSS was introduced in **2004**, by A**merican Express, Discover, MasterCard and Visa** in response to security breaches and financial losses within the credit card industry.
+- Since 2006 the standard has been evolved and maintained by the **PCI Security Standards Council**, a “global organization, (it) maintains, evolves and promotes Payment Card Industry Standards for the safety of cardholder data across the globe.”
+- The PCI Security Standards Council is now comprised of American Express, Discover, JCB International MasterCard and Visa Inc.
+- Applies to all entities that store, process, and/or transmit cardholder data.
+- Covers technical and operational practices for system components included in or connected to environments with cardholder data.
+- PCI DSS 3.2 includes a total of **264 requirements** grouped under **12 main requirements**.
+
+#### Goals and Requirements
+
+PCI DSS 3.2 includes a total of **264 requirements** grouped under **12 main requirements**:
+
+![](images/Pasted%20image%2020230310112559.png)
+
+#### Scope
+
+**The Cardholder Data Environment (CDE): People, processes and technology that store, process or transmit cardholder data or sensitive authentication data.**
+- Cardholder Data:
+	- Primary Account Number (PAN)
+	- PAN plus any of the following:
+		- Cardholder name
+		- expiration date and/or service mode.
+
+**Sensitive Authentication Data:**
+- Security-related information (including but not limited to card validation codes/values, full track data (from the magnetic stripe or equivalent on a chip), PINs, and PIN blocks) used to authenticate cardholder and/or authorize payment card transactions.
+
+**Sensitive Areas:**
+- Anything that accepts, processes, transmits or stores cardholder data.
+- Anything that houses systems that contain cardholder data.
+
+#### Determining Scope
+
+| People                         | Processes                 | Technologies                          |
+| ------------------------------ | ------------------------- | ------------------------------------- |
+| Compliance Personnel           | IT Governance             | Internal Network Segmentation         |
+| Human Resources                | Audit Logging             | Cloud Application platform containers |
+| IT Personnel                   | File Integrity Monitoring |                                       |
+| Developers                     | Access Management         | Virtual LAN                           |
+| System Admins and Architecture | Patching                  |                                       |
+| Network Admins                 | Network Device Management |                                       |
+| Security Personnel             | Security Assessments      |                                       |
+|                                | Anti-Virus                |                                       | 
+
+#### PCI Requirements
+
+Highlight New and Key requirements:
+- Approved Scanning Vendor (ASV) scans (quarterly, external, third party).
+- Use PCI scan policy in Nessus for internal vulnerability scans.
+- File Integrity Monitoring (FIM)
+- Firewall review frequency every 6 months
+- Automated logoff of idle session after 15 minutes
+- Responsibility Matrix
+
+# Critical Security Controls
+
+## Center for Internet Security (CIS) Critical Security Controls
+
+### CIS Critical Security Controls
+
+- The CIS Controls<sup>TM</sup> are a prioritized set of actions that collectively form a defense-in-depth set of best practices that mitigate the most common attacks against systems and networks.
+- The CIS Controls<sup>TM</sup> are developed by a community of IT experts who apply their first-hand experience as cyber defenders to create these globally accepted security best practices.
+- The experts who develop the CIS Controls come from a wide range of sectors including retail, manufacturing, healthcare, education, government, defense, and others.
+
+### CIS Control<sup>TM</sup> 7
+
+![](images/Pasted%20image%2020230310114916.png)
+
+### CIS Control<sup>TM</sup> 7.1 Implementation Groups
+
+![](images/Pasted%20image%2020230310115024.png)
+
+### Structure of the CIS Control<sup>TM</sup> 7.1
+
+The presentation of each Control in this document includes the following elements:
+- A description of the importance of the CIS Control (**Why is this control critical?**) in blocking or identifying the presence of attacks, and an explanation of how attackers actively exploit the absence of this Control.
+- A table of the specific actions (**“Sub-Controls”**) that organizations should take to implement the Control.
+- **Procedures and Tools** that enable implementation and automation.
+- Sample **Entity Relationship Diagrams** that show components of implementation.
+
+# Compliance Summary
+
+![](images/Pasted%20image%2020230310120258.png)
