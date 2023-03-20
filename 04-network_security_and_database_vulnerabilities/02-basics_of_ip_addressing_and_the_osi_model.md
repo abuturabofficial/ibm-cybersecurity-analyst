@@ -72,6 +72,13 @@
       - [Prevention?](#prevention)
         - [Signature-based detection](#signature-based-detection)
         - [Statistical anomaly detection](#statistical-anomaly-detection)
+- [Clustering and High Availability Systems](#clustering-and-high-availability-systems)
+  - [High Availability and Clustering](#high-availability-and-clustering)
+    - [What is HA?](#what-is-ha)
+      - [Requirements for creating an HA cluster?](#requirements-for-creating-an-ha-cluster)
+      - [How HA works?](#how-ha-works)
+    - [NIC Teaming](#nic-teaming)
+      - [HA on a Next-Gen FW](#ha-on-a-next-gen-fw)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -419,3 +426,44 @@ It is based on a dictionary of uniquely identifiable patterns (or signatures) in
 
 - Takes samples of network traffic at random and compares them to a pre-calculated baseline performance level. When the sample of network traffic activity is outside the parameters of baseline performance, the IPS takes action to handle the situation.
 - IPS was originally built and released as a standalone device in the mid-2000s. This, however, was in the advent of today’s implementations, which are now commonly integrated into Unified Threat Management (UTM) solutions (for small and medium size companies) and NGFWs (at the enterprise level).
+
+# Clustering and High Availability Systems
+
+## High Availability and Clustering
+
+### What is HA?
+
+- In information technology, high availability (HA) refers to a system or component that is continuously operational for a desirably long length of time. Availability can be measured relative to “100% operational” or “never failing”.
+- HA architecture is an approach of defining the components, modules, or implementation of services of a system which ensures optimal operational performance, even at times of high loads.
+- Although there are no fixed rules of implementing HA systems, there’re generally a few good practices that one must follow so that you gain most out of the least resources.
+
+#### Requirements for creating an HA cluster?
+
+- Hosts in a virtual server cluster must have access to the same shared storage, and they must have identical network configurations.
+- Domain name system (DNS) naming is important too: All hosts must resolve other hosts using DNS names, and if DNS isn’t set correctly, you won’t be able to configure HA settings at all.
+- Same OS level.
+- Connections between the primary and secondary nodes.
+
+#### How HA works?
+
+To create a highly available system, three characteristics should be present:
+
+**Redundancy:**
+- Means that there are multiple components that can perform the same task. This eliminates the single point of failure problem by allowing a second server to take over a task if the first one goes down or becomes disabled.
+
+**Monitoring and Failover**
+- In a highly available setup, the system needs to be able to monitor itself for failure. This means that there are regular checks to ensure that all components are working properly. Failover is the process by which a secondary component becomes primary when monitoring reveals that a primary component has failed.
+
+![](images/Pasted%20image%2020230320110347.png)
+
+### NIC Teaming
+
+It is a solution commonly employed to solve the network availability and performance challenges and has the ability to operate multiple NICs as a single interface from the perspective of the system.
+
+NIC teaming provides:
+- Protection against NIC failures
+- Fault tolerance in the event of a network adapter failure.
+
+#### HA on a Next-Gen FW
+
+![](images/Pasted%20image%2020230320111302.png)
