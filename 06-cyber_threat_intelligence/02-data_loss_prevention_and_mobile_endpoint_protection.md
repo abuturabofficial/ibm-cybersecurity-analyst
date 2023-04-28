@@ -1,3 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Data Security and Protection](#data-security-and-protection)
+  - [What is Data Security and Protection?](#what-is-data-security-and-protection)
+    - [What are we protecting against?](#what-are-we-protecting-against)
+  - [Data Security Top Challenges](#data-security-top-challenges)
+  - [Data Security Common Pitfalls](#data-security-common-pitfalls)
+  - [Industry Specific Data Security Challenges](#industry-specific-data-security-challenges)
+    - [Healthcare](#healthcare)
+    - [Transportation](#transportation)
+    - [Financial industries and insurance](#financial-industries-and-insurance)
+    - [Retail](#retail)
+  - [Capabilities of Data Protection](#capabilities-of-data-protection)
+  - [Data Protection – Industry Example](#data-protection--industry-example)
+    - [Guardium support the data protection journey](#guardium-support-the-data-protection-journey)
+    - [Guardium – Data Security and Privacy](#guardium--data-security-and-privacy)
+- [Mobile Endpoint Protection](#mobile-endpoint-protection)
+    - [How do mobile endpoints differ from traditional endpoints?](#how-do-mobile-endpoints-differ-from-traditional-endpoints)
+    - [Primary Threats To Mobile Endpoints](#primary-threats-to-mobile-endpoints)
+    - [Protection mobile assets](#protection-mobile-assets)
+    - [Day-to-day operations](#day-to-day-operations)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Data Security and Protection
 
 ## What is Data Security and Protection?
@@ -125,3 +151,57 @@ Five epic fails in Data Security:
 ![](images/Pasted%20image%2020230427164946.png)
 
 ![](images/Pasted%20image%2020230427165015.png)
+
+# Mobile Endpoint Protection
+
+**iOS**
+- Developed by Apple
+- Launched in 2007
+- ~13% of devices (based on usage)
+- ~60% of tablets worldwide run iOS/iPadOS
+- MDM capabilities available since iOS 6
+
+**Android**
+- Android Inc. was a small team working on an alternative to Symbian and Windows Mobile OS.
+- Purchased by Google in 2005 – the Linux kernel became the base of the Android OS. Now developed primarily by Google and a consortium known as **Open Handset Alliance.**
+- First public release in 2008
+- ~86% of smartphones and ~39% of tablets run some form of Android.
+- MDM capabilities since Android 2.2.
+
+### How do mobile endpoints differ from traditional endpoints?
+
+- Users don’t interface directly with the OS.
+- A series of applications act as a broker between the user and the OS.
+- OS stability can be easily monitored, and any anomalies reported that present risk.
+- Antivirus software can “see” the apps that are installed on a device, and reach certain signatures, but can not peek inside at their contents.
+
+### Primary Threats To Mobile Endpoints
+
+**System based:**
+- Jailbreaking and Rooting exploit vulnerabilities to provide root access to the system.
+- Systems that were previously read-only can be altered in malicious ways.
+- One primary function is to gain access to apps that are not approved or booting.
+- Vulnerabilities and exploits in the core code can open devices to remote attacks that provide root access.
+
+**App based threats:**
+- Phishing scams – via SMS or email
+- Malicious code
+- Apps may request access to hardware features irrelevant to their functionality
+- Web content in mobile browsers, especially those that prompt for app installations, can be the root cause of many attacks
+
+**External:**
+- Network based attacks
+- Tethering devices to external media can be exploited for vulnerabilities
+- Social engineering to unauthorized access to the device
+
+### Protection mobile assets
+
+- **MDM:** Control the content allowed on the devices, restrict access to potentially dangerous features.
+- **App security**: Report on the health and reliability of applications, oftentimes before they even make it on the devices.
+- **User Training**
+
+### Day-to-day operations
+
+While it may seem like a lot to monitor hundreds, thousands, or hundreds of thousands of devices daily, much of the information can be digested by automated systems and action taken without much admin interactions.
+
+![](images/Pasted%20image%2020230428062609.png)
