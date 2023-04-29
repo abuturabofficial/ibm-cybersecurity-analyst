@@ -1,3 +1,67 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Vulnerability Assessment Tools](#vulnerability-assessment-tools)
+  - [Tools](#tools)
+    - [What is a Vulnerability Scanner?](#what-is-a-vulnerability-scanner)
+      - [Components of Vulnerability Scanners](#components-of-vulnerability-scanners)
+      - [Host & Network](#host--network)
+      - [Common Vulnerability Scoring Systems (CVSS)](#common-vulnerability-scoring-systems-cvss)
+    - [STIGS – Security Technical Implementation Guides](#stigs--security-technical-implementation-guides)
+    - [Center for Internet Security (CIS)](#center-for-internet-security-cis)
+    - [Implementation Groups](#implementation-groups)
+      - [20 CIS Controls](#20-cis-controls)
+- [Port Scanning](#port-scanning)
+    - [Ports](#ports)
+    - [Responses](#responses)
+    - [Types of Scans](#types-of-scans)
+      - [Tools – NMAP](#tools--nmap)
+- [Network Protocol Analyzers](#network-protocol-analyzers)
+    - [Sniffers](#sniffers)
+      - [WireShark](#wireshark)
+        - [WireShark Features](#wireshark-features)
+      - [Packet Capture (PCAP)](#packet-capture-pcap)
+- [Security Architecture considerations](#security-architecture-considerations)
+  - [Characteristics of a Security Architecture](#characteristics-of-a-security-architecture)
+  - [High-level Architectural Models](#high-level-architectural-models)
+  - [Solution Architecture](#solution-architecture)
+  - [Security Patterns](#security-patterns)
+- [Application Security Techniques and Risks](#application-security-techniques-and-risks)
+  - [Application Security Overview](#application-security-overview)
+    - [Software Development Lifecycle](#software-development-lifecycle)
+    - [Penetration Testing Tools](#penetration-testing-tools)
+    - [Source Code Analysis Tools](#source-code-analysis-tools)
+  - [Application Security Threats and Attacks](#application-security-threats-and-attacks)
+    - [Third Party Software](#third-party-software)
+    - [Web Application Firewall (WAF)](#web-application-firewall-waf)
+    - [Application Threats/Attacks](#application-threatsattacks)
+  - [Application Security Standards and Regulations](#application-security-standards-and-regulations)
+    - [Threat Modeling](#threat-modeling)
+    - [Standards vs Regulations](#standards-vs-regulations)
+- [DevSecOps Overview](#devsecops-overview)
+    - [Why this matter?](#why-this-matter)
+    - [What does DevSecOps look like?](#what-does-devsecops-look-like)
+      - [Develop Securely: Plan A security-first approach](#develop-securely-plan-a-security-first-approach)
+      - [Develop Security: Code & Build Security & Development combined](#develop-security-code--build-security--development-combined)
+      - [Develop Securely: Code & Build](#develop-securely-code--build)
+      - [Develop Securely: Test](#develop-securely-test)
+  - [DevSecOps Deployment](#devsecops-deployment)
+    - [Secure Operations: Release, Deploy & Decom](#secure-operations-release-deploy--decom)
+    - [Secure Operations: Operate & Monitor](#secure-operations-operate--monitor)
+      - [So, why DevSecOps?](#so-why-devsecops)
+- [Deep Dive into Cross-Site Scripting](#deep-dive-into-cross-site-scripting)
+  - [Application Security Defects – Writing Secure Code](#application-security-defects--writing-secure-code)
+    - [What, Should I worry?](#what-should-i-worry)
+    - [Issues Types](#issues-types)
+    - [Writing Secure Software is Not Easy](#writing-secure-software-is-not-easy)
+    - [Mitigating Product Security Risk](#mitigating-product-security-risk)
+  - [Cross scripting – Common Attacks](#cross-scripting--common-attacks)
+    - [Dangers of XSS](#dangers-of-xss)
+  - [Cross-site Scripting – Effective Defenses](#cross-site-scripting--effective-defenses)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # Vulnerability Assessment Tools
 
@@ -338,3 +402,204 @@ A security Architecture pattern is
 - Attacker exploits an application without trace
 - Attacker covers his tracks
 
+## Application Security Standards and Regulations
+
+### Threat Modeling
+
+“Threat modeling is a process by which potential threats, such as structural vulnerabilities or the absence of appropriate safeguards, can be identified, enumerated, and mitigations can be prioritized.”
+
+Conceptually, a threat modeling practice flows from a methodology.
+1) STRIDE methodology
+	- Microsoft developed it
+2) P.A.S.T.A
+	- Seven-step process
+3) TRIKE
+4) VAST
+
+### Standards vs Regulations
+
+| Standards                         | Regulations              |
+| --------------------------------- | ------------------------ |
+| Cert Secure Coding                |                          |
+| Common Weakness Enumeration (CWE) | Gramm-Leach-Bliley Act   |
+| DISA-STIG                         | HIPAA                    |
+| ISO 27034/24772                   | Sarbanes-Oxley Act (SOX) |
+| PCI-DSS                           |                          |
+| NIST 800-53                       |                          | 
+
+# DevSecOps Overview
+
+### Why this matter?
+
+![](images/Pasted%20image%2020230429145936.png)
+
+- Emerging DevOps teams lead to conflicting objectives.
+- DevSecOps is an integrated, automated, continuous security; always.
+
+**Integrating Security with DevOps to create DevSecOps.**
+
+![](images/Pasted%20image%2020230429150326.png)
+
+### What does DevSecOps look like?
+
+![](images/Pasted%20image%2020230429150411.png)
+
+- Define your operating and governance model early.
+- A successful program starts with the people & culture.
+	- Training and Awareness
+	- Explain and embrace new ways of working
+	- Equip teams & individuals with the right level of ownership & tools
+- Continuous improvement and feedback.
+
+#### Develop Securely: Plan A security-first approach
+
+Use tools and techniques to ensure security is integral to the design, development, and operation of all systems.
+
+Enable empowerment and ownership by the Accreditor/Risk owner participating in Plan & Design activities.
+
+**Security Coach** role to drive security integration.
+
+![](images/Pasted%20image%2020230429150830.png)
+
+![](images/Pasted%20image%2020230429150855.png)
+
+#### Develop Security: Code & Build Security & Development combined
+
+Apply the model to Everything-as-Code:
+- Containers
+- Apps
+- Platforms
+- Machines
+- Shift security to the left and embrace security-as-code.
+- Security Engineer to drive technical integration and uplift team security knowledge.
+
+
+![](images/Pasted%20image%2020230429150955.png)
+
+#### Develop Securely: Code & Build
+
+Detect issues and fix them, earlier in the lifecycle
+
+![](images/Pasted%20image%2020230429151529.png)
+
+#### Develop Securely: Test
+
+Security and development Combined
+
+![](images/Pasted%20image%2020230429151629.png)
+
+Validate apps are secure before release & development.
+
+![](images/Pasted%20image%2020230429151806.png)
+
+## DevSecOps Deployment
+
+### Secure Operations: Release, Deploy & Decom
+
+- Orchestrate everything and include security.
+- Manage secure creation and destruction of your workloads.
+- Automate sign-off to certified levels of data destruction.
+
+Controlled creation & destruction
+
+![](images/Pasted%20image%2020230429151938.png)
+
+Create securely, destroy securely, every time.
+
+![](images/Pasted%20image%2020230429152102.png)
+
+### Secure Operations: Operate & Monitor
+
+- If you don’t detect it, you can’t fix it.
+- Integrated operational security helps ensure the security health of the system is as good as it can be with the latest information.
+- Playbooks-as-code run automatically, as issues are detected they are remediated and reported on.
+
+Security & Operations combined
+
+![](images/Pasted%20image%2020230429152234.png)
+
+It’s not a question of if you get hacked, but when.
+
+![](images/Pasted%20image%2020230429152524.png)
+
+#### So, why DevSecOps?
+
+![](images/Pasted%20image%2020230429152624.png)
+
+# Deep Dive into Cross-Site Scripting
+
+## Application Security Defects – Writing Secure Code
+
+### What, Should I worry?
+
+![](images/Pasted%20image%2020230429154803.png)
+
+### Issues Types
+
+- Majority of security products have Web UIs: LMIs, Administrative Interfaces, Dashboards.
+- Web vulnerabilities most commonly reported by 3rd parties as well as internal pen-testers, with XSS far in the lead.
+- Crypto vulnerabilities come next.
+- Appliances highly susceptible to command execution vulnerabilities.
+
+### Writing Secure Software is Not Easy
+
+- Developers face many challenges:
+
+![](images/Pasted%20image%2020230429155114.png)
+
+- Yet with good security education, and solid design and implementation practices, we can make sure our products are secure.
+
+### Mitigating Product Security Risk
+
+- Prevent new bugs
+	- SANS 25 most dangerous programming errors.
+- Think like a hacker.
+- Build defenses in your software.
+	- Input Validation
+	- Output Sanitization
+	- Strong encryption
+	- Strong Authentication & Authorization
+- Choose secure frameworks rather than simply rely on developer security skills.
+- Don’t think that if your product is isolated from the Internet, it isn’t at risk.
+- Don’t think that if a file or database is local, it doesn’t need to be protected. The majority of breaches are launched from INSIDE.
+- Address existing bugs.
+	- Redesign for not only looks, but for security and functionality.
+	- Implement smart architectural changes that fix security flaws at the top.
+	- Don’t spot-fix issues, think of how the vulnerability can be fixed across the board and prevented in the future.
+	- Security bugs are special. (Need to be fixed asap)
+	 - Deliver security patches with faster release vehicles.
+
+## Cross scripting – Common Attacks
+
+Cross-Site Scripting (XSS)
+- Allows attackers to inject client-side scripts into the Web Page
+- Can come from anywhere:
+	- HTTP parameters
+	- HTTP headers and cookies
+	- Data in JSON and XML files
+	- Database
+	- Files uploaded by users
+- Most common security issues found in many security products.
+
+### Dangers of XSS
+
+- Harvest credentials
+- Take over user sessions
+- CSFR
+- Steal cookies, local store data
+- Elevate privileges
+- Redirect users to malicious sites
+
+## Cross-site Scripting – Effective Defenses
+
+- Preventing XSS with HTML Encoding
+	- Enforcing the charset (UTF-8)
+- Preventing XSS with JS Escaping
+	- Escaping single quotes will prevent injection
+	- Preventing XSS by using safe DOM elements
+	- Use Eval and Dynamic Code Generation with Care
+- Input Validation
+	- Whitelisting – recommended
+	- Blacklisting – not recommended
+	- Client Side input validation – not recommended
+	- Use proven Validation and Encoding Functionality
