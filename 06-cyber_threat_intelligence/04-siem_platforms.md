@@ -1,3 +1,38 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [SIEM Concepts](#siem-concepts)
+  - [SIEM Concepts, Benefits, Optimization, & Capabilities](#siem-concepts-benefits-optimization--capabilities)
+    - [SIEM](#siem)
+    - [Events & Flows](#events--flows)
+    - [Data Collection](#data-collection)
+    - [Normalization](#normalization)
+    - [License Throttling](#license-throttling)
+    - [Coalescing](#coalescing)
+  - [SIEM Deployment](#siem-deployment)
+    - [SIEM Deployment Considerations](#siem-deployment-considerations)
+    - [Events](#events)
+    - [Flows](#flows)
+      - [Reasons to add event or flow collectors to an All-in-One deployment](#reasons-to-add-event-or-flow-collectors-to-an-all-in-one-deployment)
+    - [Security Operations Center (SOC)](#security-operations-center-soc)
+    - [SOC Data Collection](#soc-data-collection)
+  - [SIEM Solutions – Vendors](#siem-solutions--vendors)
+      - [Deployments](#deployments)
+    - [Important Concepts](#important-concepts)
+      - [IBM QRadar](#ibm-qradar)
+      - [ArcSight ESM](#arcsight-esm)
+      - [Splunk](#splunk)
+      - [LogRythm’s Security Intelligence Platform](#logrythms-security-intelligence-platform)
+- [User Behavior Analytics](#user-behavior-analytics)
+    - [Security Ecosystem](#security-ecosystem)
+    - [Advantages of an integrated UBA Solution](#advantages-of-an-integrated-uba-solution)
+- [Artificial Intelligence in SIEMs](#artificial-intelligence-in-siems)
+  - [AI and SIEM](#ai-and-siem)
+    - [AI and SIEM – An industry Example](#ai-and-siem--an-industry-example)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # SIEM Concepts
 
@@ -93,6 +128,7 @@ To consider:
 
 **Flow Processor:**
 - Flow deduplication: is a process that removes duplicate flows when multiple Flow Collectors provide data to Flow Processors appliances.
+
 - Asymmetric recombination: Responsible for combining two sides of each flow when data is provided asymmetrically. This process can recognize flows from each side and combine them in to one record. However, sometimes only one side of the flow exists.
 - License throttling: Monitors the number of incoming flows to the system to manage input queues and licensing.
 - Forwarding: Applies routing rules for the system, such as sending flow data to offsite targets, external Syslog systems, JSON systems, other SIEMs.
@@ -179,3 +215,102 @@ A large deployment generally covers more than 1000 log sources with approximatel
 - Easily extend to third-party analytic models, including existing insider threats use cases already implemented.
 - Leverage UBA insights in other integrated security analytics solutions.
 - Get more from your QRadar ecosystem.
+
+**IBM QRadar UBA**
+
+160+ rules and ML driven use cases addressing 3 major insider threat vectors:
+1) Compromised or Stolen Credentials
+2) Careless or Malicious Insiders
+3) Malware takeover of user accounts
+
+**Detecting Compromised Credentials**
+- 70% of phishing attacks are to steal credentials.
+- 81% of breaches are with stolen credentials.
+- $4M average cost of a data breach.
+
+![](images/Pasted%20image%2020230430144907.png)
+
+**Malicious behavior comes in many forms**
+
+![](images/Pasted%20image%2020230430145003.png)
+
+**Maturing into User Behavioral Analytics**
+
+![](images/Pasted%20image%2020230430145130.png)
+
+**QRadar UBA delivers value to the SOC**
+
+![](images/Pasted%20image%2020230430145308.png)
+
+# Artificial Intelligence in SIEMs
+
+## AI and SIEM
+
+**Your goals as a security operations team are fundamental to your business.**
+
+![](images/Pasted%20image%2020230430145619.png)
+
+**Pressures today make it difficult to achieve your business goals.**
+
+![](images/Pasted%20image%2020230430145714.png)
+
+**Challenge #1: Unaddressed threats**
+
+![](images/Pasted%20image%2020230430145825.png)
+
+**Challenge #2: Insights Overload**
+
+![](images/Pasted%20image%2020230430145913.png)
+
+**Challenge #3: Dwell times are getting worse**
+
+Lack of consistent, high-quality and context-rich investigations lead to a breakdown of existing processes and high probability of missing crucial insights – exposing your organization to risk.
+
+**Challenge #4: Lack of cybersecurity talent and job fatigue**
+
+- Overworked
+- Understaffed
+- Overwhelmed
+
+**Investigating an Incident without AI:**
+
+![](images/Pasted%20image%2020230430150226.png)
+
+**Unlock a new partnership between analysts and their technology:**
+
+![](images/Pasted%20image%2020230430150326.png)
+
+### AI and SIEM – An industry Example
+
+**QRadar Advisor with Watson:**
+Built with AI for the front-line Security Analyst.
+
+QRadar Advisor empowers security analysts to drive consistent investigations and make quicker and more decisive incident escalations, resulting in **reduced dwell** times, and **increased analyst efficiency**.
+
+**Benefits of adopting QRadar Advisor:**
+
+![](images/Pasted%20image%2020230430150708.png)
+
+**How it works – An app that takes QRadar to the next level:**
+
+![](images/Pasted%20image%2020230430150742.png)
+
+**How it works – Building the knowledge (internal and external)**
+
+![](images/Pasted%20image%2020230430150828.png)
+
+**How it works – Aligning incidents to the ATT&CK chain:**
+
+![](images/Pasted%20image%2020230430150911.png)
+
+**How it works – Cross-investigation analytics**
+
+![](images/Pasted%20image%2020230430150954.png)
+
+**How it works – Using analyst feedback to drive better decisions**
+
+![](images/Pasted%20image%2020230430151037.png)
+
+**How it works – QRadar Assistant**
+
+![](images/Pasted%20image%2020230430151111.png)
