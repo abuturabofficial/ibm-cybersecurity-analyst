@@ -413,8 +413,8 @@ Conceptually, a threat modeling practice flows from a methodology.
 	- Microsoft developed it
 2) **P.A.S.T.A:** P.A.S.T.A. stands for Process for Attack Simulation and Threat Analysis. It is an attacker-focused methodology that uses a seven-step process to identify and analyze potential threats.
 	- Seven-step process
-3) **TRIKE:** VAST is an acronym for Visual, Agile, and Simple Threat modeling. The methodology provides actionable outputs for the unique needs of various stakeholders like application architects and developers.
-4) **VAST:** Trike threat modeling is an open-source threat modeling methodology focused on satisfying the security auditing process from a cyber risk management perspective. It provides a risk-based approach with unique implementation and risk modeling process.
+3) **VAST:** VAST is an acronym for Visual, Agile, and Simple Threat modeling. The methodology provides actionable outputs for the unique needs of various stakeholders like application architects and developers.
+4) **Trike:** Trike threat modeling is an open-source threat modeling methodology focused on satisfying the security auditing process from a cyber risk management perspective. It provides a risk-based approach with unique implementation and risk modeling process.
 
 ### Standards vs Regulations
 
