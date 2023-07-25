@@ -1,6 +1,8 @@
 # IBM Cybersecurity Analyst Professional Certificate
 My notes of "IBM Cybersecurity Analyst Professional Certificate". This certificate includes following 8 individual courses:
 
+## **Note:** I have moved to zettelkasten note taking method, and this repo will no longer be updated. Currently, I'm not sharing my zettelkasten vault publicly. (Though this repo, is currently fully complete, and all courses were done before moving to the zettelkasten method.
+
 ### 1) Introduction to Cybersecurity Tools & Cyberattacks
 
 ### 2) Cybersecurity Roles, Processes & Operating System Security
