@@ -1,3 +1,9 @@
+# **Archival Notice:**
+
+I have archived this repo and moved all my notes (new and old) to [wiki.cyberfront.me](https://wiki.cyberfront.me)
+
+![image](https://github.com/user-attachments/assets/49ede395-d2f6-432d-89b7-fc3de4806023)
+
 # IBM Cybersecurity Analyst Professional Certificate
 My notes of "IBM Cybersecurity Analyst Professional Certificate". This certificate includes following 8 individual courses:
 
